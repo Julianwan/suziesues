@@ -6,7 +6,7 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Suzie Sues! - Personal Injury Law Firm",
+  title: "Suzie Sues! Law Firm",
   description: "Where your minor inconveniences become major paydays! Suzie Suzalot is a high-energy legal whiz that sues for any personal injury.",
 };
 
