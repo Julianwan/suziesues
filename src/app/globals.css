@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+:root {
+ --foreground-rgb: 0, 0, 0;
+ --background-start-rgb: 255, 255, 255;
+ --background-end-rgb: 255, 255, 255;
+ --primary-color: 220, 38, 38; /* Red-600 */
+ --secondary-color: 75, 85, 99; /* Gray-600 */
+}
+
+@media (prefers-color-scheme: dark) {
+ :root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+  --primary-color: 239, 68, 68; /* Red-500 */
+  --secondary-color: 156, 163, 175; /* Gray-400 */
+ }
+}
+
+body {
+ color: rgb(var(--foreground-rgb));
+ background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.text-primary {
+ color: rgb(var(--primary-color));
+}
+
+.bg-primary {
+ background-color: rgb(var(--primary-color));
+}
+
+.text-secondary {
+ color: rgb(var(--secondary-color));
+}
+
+.bg-secondary {
+ background-color: rgb(var(--secondary-color));
+}
+
+.border-primary {
+ border-color: rgb(var(--primary-color));
+}
+
+.border-secondary {
+ border-color: rgb(var(--secondary-color));
+}
